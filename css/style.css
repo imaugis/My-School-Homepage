@@ -1,0 +1,128 @@
+/* IMPORT CSS */
+@import "reset.css";
+@import "fonts.css";
+
+body {background: #FFFFFF;}
+body.gui {background-color: transparent; background-image: url('../img/bg.png'); background-repeat: no-repeat; background-position: top center; background-attachment: fixed; background-size: 100%;}
+
+/***** TYPOGRAPHY *****/
+b, strong {font-weight: bold;}
+i, em {font-style: italic;}
+u {text-decoration: underline;}
+
+h1 {display: block; margin: 0 0 30px 0; padding: 0; font-family: "open_sansbold", sans-serif; font-size: 36px; line-height: 1.3em; color: #444444; width: 100%;}
+h2 {display: block; margin: 0 0 10px 0; padding: 0; font-family: "open_sansbold", sans-serif; font-size: 16px; line-height: 1.3em; color: #444444; font-weight: normal; width: 100%;}
+p {display: block; margin: 0 0 20px 0; padding: 0; font-family: "open_sansregular", sans-serif; font-size: 14px; line-height: 1.3em; color: #444444;}
+ul, ol {display: block; margin: 0 0 15px 0; padding: 0 0 0 20px; height: auto; width: auto;}
+ul li {margin: 0; padding: 0; list-style-type: square; list-style-position: outside; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #444444; line-height: 1.3em;}
+ol li {margin: 0; padding: 0; list-style-type: decimal; list-style-position: outside; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #444444; line-height: 1.3em;}
+a, p a {text-decoration: none; color: #1E8BC3;}
+a:hover, p a:hover {text-decoration: underline;}
+
+/***** BUTTONS *****/
+.button {display: inline-block; vertical-align: top; margin: 0; padding: 0 15px; height: 40px; line-height: 40px; width: auto; border: 1px solid transparent; font-family: "open_sansbold", sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; text-transform: uppercase; cursor: pointer;}
+.button:hover {text-decoration: none;}
+.button-blue {background-color: #1E8BC3; border-bottom: 3px solid #2C3E50;}
+.button-grey {background-color: #E1E1E1; border-bottom: 3px solid #444444; color: #444444;}
+.add {padding: 0 15px 0 40px; background-image: url('../img/ico_add_white.png'); background-repeat: no-repeat; background-position: 5px 5px; background-size: 30px 30px;}
+.previous {padding: 0 15px 0 40px; background-image: url('../img/ico_previous_white.png'); background-repeat: no-repeat; background-position: 5px 5px; background-size: 30px 30px;}
+
+/***** ALERTS *****/
+.alert {display: block; margin: 0 0 20px 0; padding: 15px; width: auto; border: 1px solid transparent; border-radius: 4px; box-sizing: border-box;}
+.alert-danger {color: #A94442; background-color: #F2DEDE; border-color: #EBCCD1;}
+
+/***** TABLES *****/
+table {display: block; margin: 0 0 30px 0; padding: 0; border-collapse: collapse; height: auto; width: 100% !important; background-color: transparent; font-family: "robotolight", sans-serif; font-size: 13px; color: #444444; border: 1px solid #F4F4F4;}
+table tbody {display: table; width: 100% !important; background-color: transparent;}
+table tbody tr {min-height: 40px; width: 100% !important; background-color: transparent;}
+table tbody tr:last-child {border-bottom: 0;}
+table tbody th {width: auto; vertical-align: middle; padding: 10px; text-align: left; background-color: #F4F4F4; font-weight: bold;}
+table tbody td {width: auto; vertical-align: top; padding: 10px; text-align: left;}
+table tbody td:first-child {border-left: 0;}
+table tbody td:last-child {border-right: 0;}
+table tbody td a {color: #1E8BC3; text-decoration: underline;}
+
+table tbody tr:hover, table tbody tr:focus {background-color: #52B3D9; color: #FFFFFF; cursor: pointer;}
+table tbody tr:hover a {color: #FFFFFF;}
+table tbody tr:hover th {background-color: #F4F4F4; color: #444444;}
+
+/***** FORMS *****/
+form {display: block; margin: 0 0 30px 0; padding: 0; height: auto; width: 100%;}
+form label {display: block; margin: 0 0 5px 0; padding: 0; font-family: "open_sansbold", sans-serif; font-size: 16px; line-height: 1.3em; color: #444444;}
+form input {display: block; margin: 0 0 15px 0; padding: 0 0 0 10px; height: 40px; width: 60%; background-color: #FFFFFF; border: 2px solid #E1E1E1; font-family: "open_sansregular", sans-serif; font-size: 16px; line-height: 30px; color: #444444;}
+form textarea {display: block; margin: 0 0 20px 0; padding: 10px; height: 150px; width: 80%; background-color: #FFFFFF; border: 2px solid #E1E1E1; font-family: "open_sansregular", sans-serif; font-size: 16px; line-height: 1.3em; color: #444444;}
+form input:focus, form textarea:focus {border: 2px solid #1E8BC3;}
+form label input[type=checkbox] {display: inline; margin: 0 10px 0 0; padding: 0; height: auto; width: auto; vertical-align: middle; }
+form label input[type=radio] {display: inline; margin: 0 10px 0 0; padding: 0; height: auto; width: auto; vertical-align: middle; }
+form select {display: block; margin: 0 0 15px 0; padding: 0 34px 0 5px; box-sizing: border-box; height: 40px; width: auto; font-family: "open_sansregular", sans-serif; color: #444444; -moz-appearance: none; -webkit-appearance: none; border: 2px solid #E1E1E1; background-color: #FFFFFF; background-image: url('../img/bg_select.png'); background-repeat: no-repeat; background-position: top right;}
+form input[type=file] {padding: 0 10px 0 0;}
+form input[type=checkbox], form input[type=checkbox] + label {display: inline-block; vertical-align: top; height: 20px; line-height: 20px; width: auto; margin: 0 0 20px 10px; cursor: pointer; font-family: "open_sansregular",sans-serif;}
+
+form input[type=submit] {display: inline-block; vertical-align: top; margin: 0 auto; padding: 0 15px; height: 44px; line-height: 40px; width: auto;}
+
+/***** GUI *****/
+#msh_gui {position: absolute; left: 50%; display: block; margin: 150px 0 0 -410px; padding: 0; box-sizing: border-box; height: auto; width: 820px; background-color: transparent; border: 0; font-size: 0;}
+#msh_gui a {display: inline-block; vertical-align: top; margin: 0 20px 20px 0; padding: 0; height: 232px; width: 190px; background-color: transparent; border: 0; cursor: pointer; text-decoration: none;}
+#msh_gui a:nth-child(4n) {margin-right: 0;}
+#msh_gui a div.msh_cat_item {margin: 0; padding: 20px; box-sizing: border-box; height: 232px; width: 190px; background-color: rgba(0,0,0,.6); border-radius: 20px;}
+#msh_gui a:hover div.msh_cat_item {background-color: rgba(209,49,0,.8);}
+#msh_gui a div.msh_cat_item img {display: block; margin: 0 auto; padding: 0; height: 150px; width: 150px; background-color: transparent; border: 0;}
+#msh_gui a div.msh_cat_item h1 {margin: 0; padding: 0; font-family: "open_sansbold", sans-serif; font-size: 16px; color: #FFFFFF; text-align: center;}
+
+#msh_websites {display: block; margin: 20px auto 0 auto; padding: 0; height: auto; width: 1020px; background-color: transparent; border: 0; font-size: 0;}
+#msh_websites a {position: relative; display: inline-block; vertical-align: top; margin: 0 20px 20px 0; padding: 0; box-sizing: border-box; height: 350px; width: 240px; background-color: #FFFFFF; border: 0; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); text-decoration: none;}
+#msh_websites a:nth-child(4n) {margin-right: 0;}
+#msh_websites a .msh_website_item {margin: 0 20px 20px 0; padding: 0; box-sizing: border-box; height: 350px; width: 240px; background-color: #FFFFFF; border: 0; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);}
+#msh_websites a .msh_website_item img {display: block; margin: 0 0 10px 0; height: 150px; width: 240px; border: 0;}
+#msh_websites a .msh_website_item h1 {font-size: 14px; margin-bottom: 0; text-align: center;}
+#msh_websites a .msh_website_item p {padding: 10px; box-sizing: border-box; color: #999999;}
+
+/***** LOGIN *****/
+#login-form {position: absolute;; left: 50%; top: 200px; display: block; margin: 0 0 0 -200px; padding: 30px 20px; height: auto; width: 400px; box-sizing: border-box; background: #F7F7F7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);}
+#login-form img {display: block; margin: 0 0 30px -10px; padding: 0; border: 0; height: 40px; width: 380px;}
+#login-form form {display: block; margin: 0 auto; padding: 0; height: auto;; width: 300px;}
+#login-form form input[type=text], #login-form form input[type=password] {display: block; margin: 0 0 15px 0; padding: 0 10px; height: 44px; width: 100%; background: #FFFFFF; border: 1px solid #C0C0C0; box-sizing: border-box; font-family: "open_sansregular", sans-serif; font-size: 16px;  color: #333333;}
+#login-form form input[type=submit] {display: inline-block; margin: 0 auto; padding: 0 20px; height: 44px; line-height: 44px; width: 100%; background-color: #1E8BC3; border-top: 0; border-right: 0; border-bottom: 3px solid #2C3E50; border-left: 0; box-sizing: border-box; font-family: "open_sansbold"; font-size: 18px; color: #FFFFFF; text-transform: uppercase; cursor: pointer;}
+
+/***** HEADER *****/
+#top {z-index: 1001; position: fixed; display: block; margin: 0; padding: 0; height: 60px; width: 100%; box-sizing: border-box; background: #F1F1F1;}
+#top #header {position: relative; display: block; height: 60px; width: 100%;}
+#top #header #logo {position: absolute; top: 15px; left: 20px; display: block; margin: 0; padding: 0; height: 30px; width: 285px; background: transparent;}
+#top #header #logo img {display: block; margin: 0; padding: 0; border: 0; height: 30px; width: 285px;}
+#top #header #user-panel {position: absolute; top: 0; right: 20px; display: block; height: 50px; width: auto; background: transparent; border: 0;}
+#top #header #user-panel ul {display: block; margin: 0; padding: 0; height: 60px; width: auto; background: transparent; border: 0;}
+#top #header #user-panel ul li {position: relative; display: block; margin: 0; padding: 0; height: 60px; line-height: 60px; width: auto; background: transparent; border: 0; cursor: pointer;}
+#top #header #user-panel ul li span {display: inline-block; vertical-align: middle; margin: 0; padding: 0; height: 60px; line-height: 60px; width: auto; background: transparent; border: 0; font-family: "open_sansregular", sans-serif; font-size: 16px; color: #444444;}
+#top #header #user-panel ul li img {display: inline-block; vertical-align: middle; margin: 0 0 0 10px; padding: 0; height: 40px; border: 0;}
+#top #header #user-panel ul li ul {z-index: 1001; display: none; position: absolute; right: 0; top: 60px; margin: 0; padding: 0; height: auto; width: 200px; background: transparent; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);}
+#top #header #user-panel ul li ul li {display: block; margin: 0; padding: 0; height: auto; width: auto; background: transparent; border: 0;}
+#top #header #user-panel ul li ul li a {display: block; margin: 0; padding: 10px; height: auto; line-height: 1.3em; width: auto; background: #F1F1F1; border: 0; text-decoration: none; font-family: "open_sansregular", sans-serif; font-size: 14px; color: #444444; border-bottom: 1px solid #E9E9E9;}
+#top #header #user-panel ul li ul li a:hover {color: #1E8BC3;}
+
+#top #header #user-panel ul li:hover ul {display: block;}
+
+/***** MAIN *****/
+#main {margin: 0; padding: 90px 30px 30px 30px; height: 100%; width: 100%; box-sizing: border-box; background: #FFFFFF;}
+#main #content {margin: 0 auto; padding: 0; height: auto; width: 1020px; background: transparent; border: 0;}
+
+/***** DASHBOARD *****/
+#actions {display: block; margin: 0 auto; padding: 0; box-sizing: border-box; height: auto; width: 1020px; background-color: transparent; border: 0; text-align: right;}
+#actions form {display: inline-block; vertical-align: top; width: auto;}
+#actions form select {display: inline-block; vertical-align: top; margin: 0; padding: 0 34px 0 5px; box-sizing: border-box; height: 44px; width: auto; font-family: "open_sansregular", sans-serif; color: #444444; -moz-appearance: none; -webkit-appearance: none; border: 2px solid #E1E1E1; background-color: #FFFFFF; background-image: url('../img/bg_select.png'); background-repeat: no-repeat; background-position: top right;}
+#websites {display: block; margin: 0 auto; padding: 0; height: auto; width: 1020px; background-color: transparent; border: 0; font-size: 0;}
+#websites .websites_item {position: relative; display: inline-block; vertical-align: top; margin: 0 20px 20px 0; padding: 0; box-sizing: border-box; height: 350px; width: 240px; background-color: #FFFFFF; border: 0; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);}
+#websites .websites_item:nth-child(4n) {margin-right: 0;}
+#websites .websites_item img {display: block; margin: 0 0 10px 0; height: 150px; width: 240px; border: 0;}
+#websites .websites_item h1 {font-size: 14px; margin-bottom: 0; text-align: center;}
+#websites .websites_item p {padding: 10px; box-sizing: border-box; color: #999999;}
+#websites .websites_item a.website_edit, #websites .websites_item a.website_delete {display: inline-block; vertical-align: top; position: absolute; bottom: 10px; margin: 0; padding: 0; height: 24px; width: 24px; background-color: transparent; background-repeat: no-repeat; background-position: 0 0; background-size: 24px 24px; cursor: pointer; text-decoration: none;}
+#websites .websites_item a.website_edit {background-image: url('../img/ico_edit.png'); right:29px;}
+#websites .websites_item a.website_delete {background-image: url('../img/ico_delete.png'); right: 5px;}
+#websites .websites_item a.website_edit:hover, #websites .websites_item a.website_delete:hover {box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);}
+
+/***** TOOLBAR *****/
+#toolbar {display: block; margin: 0 0 20px 0; padding: 0; height: auto; width: 100%; background-color: transparent; border: 0; text-align: right;}
+
+/***** FOOTER *****/
+#footer {margin: 0; padding: 0; padding: 10px 0 0 0; height: auto; width: 100%; box-sizing: border-box; background: transparent; border: 0;}
+#footer p {text-align: center; font-style: italic; font-size: 12px;}
