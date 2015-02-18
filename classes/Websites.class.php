@@ -97,7 +97,7 @@
         }
         
         /*
-         * This function load all categories of website
+         * This function load a website by ID
          */
         function msh_GetWebsiteById($website_id) {
             require_once('../msh_config.php');
