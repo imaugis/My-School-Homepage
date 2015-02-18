@@ -5,7 +5,7 @@
     class Auth {
 
         /*
-         * This function allow a user to connect to OSMOSE.
+         * This function allow a user to connect to the application.
          */
         public function msh_LogIn($login,$passwd){
             // Connecting to database
